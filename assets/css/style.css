@@ -35,6 +35,7 @@ body h1 {
   font-size: 4rem;
 }
 body header {
+  border: 5px solid #FCA311;
   text-align: center;
   background-color: #14213D;
   color: #FCA311;
@@ -43,7 +44,7 @@ body header {
 }
 body header input {
   font-size: 1.5rem;
-  width: 30%;
+  min-width: 30%;
   border-radius: 0.4rem;
   padding: 0.4rem;
   background-color: rgba(20, 33, 61, 0);
@@ -60,7 +61,7 @@ body header input::placeholder {
 }
 body header select {
   font-size: 1.5rem;
-  width: 20%;
+  min-width: 20%;
   border-radius: 0.4rem;
   padding: 0.4rem;
   background-color: rgba(20, 33, 61, 0);
@@ -75,40 +76,46 @@ body header select:focus {
 body header div {
   margin-top: 4%;
   margin-bottom: 1%;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 2rem;
-  gap: 2%;
-  flex-wrap: wrap;
-  flex: 1;
+}
+body header div div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 270px));
+  gap: 1%;
+  margin-top: 3%;
+  justify-content: space-around;
 }
 body header div p {
-  flex-basis: 25%;
+  font-size: 1.5rem;
 }
 body header div button {
-  flex-basis: 15%;
   font-size: 1.3rem;
   background-color: rgba(20, 33, 61, 0);
   border: 2px solid #FCA311;
   color: #FCA311;
   border-radius: 0.4rem;
-  padding: 0.5%;
+  padding: 2%;
   transition: all 300ms ease;
+  margin-bottom: 1%;
 }
 body header div button:hover {
   background-color: #FCA311;
   color: #14213D;
 }
 body main {
+  border: 5px solid #FCA311;
+  background-color: #14213D;
+  padding: 5%;
+  border-radius: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 420px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 345px));
   margin-block: 3%;
   justify-content: space-evenly;
-  gap: 1%;
+  gap: 1.3rem;
 }
 body main article {
   background-color: white;
   border-radius: 0.5rem;
+  border: 5px solid #5b5b5b;
 }
 body main article div:nth-of-type(1) {
   text-align: left;
@@ -128,6 +135,7 @@ body main article div:nth-of-type(2) {
   justify-content: space-between;
   border-top: 1px solid #14213D;
   padding: 4% 8%;
+  height: 13%;
   align-items: center;
 }
 body main article div:nth-of-type(2) h3 {
