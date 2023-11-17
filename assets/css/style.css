@@ -1,0 +1,151 @@
+/* ====================================================================
+                                RESET
+=====================================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* ====================================================================
+                                Body
+=====================================================================*/
+body {
+  background-color: #E5E5E5;
+  padding: 2% 5%;
+  text-align: center;
+}
+body h1 {
+  color: #14213D;
+  margin: 2%;
+  font-size: 4rem;
+}
+body header {
+  text-align: center;
+  background-color: #14213D;
+  color: #FCA311;
+  padding: 2% 5%;
+  border-radius: 0.7rem;
+}
+body header input {
+  font-size: 1.5rem;
+  width: 30%;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  background-color: rgba(20, 33, 61, 0);
+  border: 2px solid #FCA311;
+  color: #FCA311;
+  margin: 1%;
+  text-align: center;
+}
+body header input:focus {
+  outline: none;
+}
+body header input::placeholder {
+  color: rgba(252, 162, 17, 0.6549019608);
+}
+body header select {
+  font-size: 1.5rem;
+  width: 20%;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  background-color: rgba(20, 33, 61, 0);
+  border: 2px solid #FCA311;
+  color: #FCA311;
+  margin: 1%;
+  text-align: center;
+}
+body header select:focus {
+  outline: none;
+}
+body header div {
+  margin-top: 4%;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  gap: 2%;
+  flex-wrap: wrap;
+  flex: 1;
+}
+body header div p {
+  flex-basis: 25%;
+}
+body header div button {
+  flex-basis: 15%;
+  font-size: 1.3rem;
+  background-color: rgba(20, 33, 61, 0);
+  border: 2px solid #FCA311;
+  color: #FCA311;
+  border-radius: 0.4rem;
+  padding: 0.5%;
+  transition: all 300ms ease;
+}
+body header div button:hover {
+  background-color: #FCA311;
+  color: #14213D;
+}
+body main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 420px));
+  margin-block: 3%;
+  justify-content: space-evenly;
+  gap: 1%;
+}
+body main article {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+body main article div:nth-of-type(1) {
+  text-align: left;
+  height: 87%;
+}
+body main article div:nth-of-type(1) img {
+  height: 300px;
+  margin: 0 auto;
+  padding: 8%;
+}
+body main article div:nth-of-type(1) h2 {
+  font-size: 1rem;
+  padding: 8%;
+}
+body main article div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #14213D;
+  padding: 4% 8%;
+  align-items: center;
+}
+body main article div:nth-of-type(2) h3 {
+  color: #06d6a0;
+  font-size: 1.5rem;
+}
+body main article div:nth-of-type(2) button {
+  font-size: 1rem;
+  background-color: rgba(20, 33, 61, 0);
+  border: 2px solid #14213D;
+  color: #14213D;
+  border-radius: 0.4rem;
+  padding: 1% 2%;
+  transition: all 300ms ease;
+}
+body main article div:nth-of-type(2) button:hover {
+  background-color: #FCA311;
+  color: #14213D;
+}
+
+/*# sourceMappingURL=style.css.map */

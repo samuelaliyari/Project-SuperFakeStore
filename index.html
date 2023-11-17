@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Project Super Fakestore</title>
+</head>
+<body>
+    <h1>SuperFakeStore</h1>
+    <header>
+        <section>
+            <form onsubmit="return false">
+                <input type="text" placeholder="Search by title" onclick="value = ''">
+                <select name="sortby" id="sortBox">
+                    <option value="sortby" selected>Sort by</option>
+                    <option value="highToLow">Price - High to low</option>
+                    <option value="lowToHigh">Price - Low to High</option>
+                </select>
+            </form>
+            <div>
+                <p>Filter by Categories:</p>
+                <button>Electronics</button>
+                <button>jewelery</button>
+                <button>Men's clothing</button>
+                <button>Women's clothing</button>
+            </div>
+        </section>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
